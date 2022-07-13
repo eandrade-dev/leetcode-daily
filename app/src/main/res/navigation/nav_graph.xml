@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/problemListFragment">
+
+    <fragment
+        android:id="@+id/problemListFragment"
+        android:name="pt.eandrade.leetcodedaily.ProblemListFragment"
+        android:label="ProblemListFragment" >
+        <action
+            android:id="@+id/action_problemListFragment_to_problemSolvingFragment"
+            app:destination="@id/problemSolvingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/problemSolvingFragment"
+        android:name="pt.eandrade.leetcodedaily.ProblemSolvingFragment"
+        android:label="ProblemSolvingFragment" >
+        <argument
+            android:name="problemClass"
+            app:argType="string" />
+    </fragment>
+</navigation>
