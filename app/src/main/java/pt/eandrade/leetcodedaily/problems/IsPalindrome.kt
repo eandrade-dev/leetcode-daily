@@ -2,7 +2,7 @@ package pt.eandrade.leetcodedaily.problems
 
 import pt.eandrade.leetcodedaily.misc.IsProblem
 
-class IsPalindrome: IsProblem {
+class IsPalindrome : IsProblem {
     override fun run() : String {
         val dataSet = when((1..4).random()){
             1 -> {

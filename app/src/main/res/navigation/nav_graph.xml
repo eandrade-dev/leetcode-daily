@@ -18,7 +18,7 @@
         android:name="pt.eandrade.leetcodedaily.ProblemSolvingFragment"
         android:label="ProblemSolvingFragment" >
         <argument
-            android:name="problemClass"
-            app:argType="string" />
+            android:name="problem"
+            app:argType="pt.eandrade.leetcodedaily.misc.IsProblem" />
     </fragment>
 </navigation>

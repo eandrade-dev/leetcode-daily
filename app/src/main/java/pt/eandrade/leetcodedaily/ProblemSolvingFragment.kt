@@ -27,7 +27,7 @@ class ProblemSolvingFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.textViewProblemName.text = args.problemClass
+        binding.textViewProblemName.text = args.problem::class.java.simpleName
 
         binding.buttonRunProblem.setOnClickListener {
             runProblem()
@@ -40,25 +40,7 @@ class ProblemSolvingFragment : Fragment() {
     }
 
     private fun runProblem(){
-        if(args.problemClass == TwoSum::class.java.name){
-            binding.textViewResult.text = TwoSum().run()
-        }
-
-        if(args.problemClass == ValidParenthesis::class.java.name){
-            binding.textViewResult.text = ValidParenthesis().run()
-        }
-
-        if(args.problemClass == MergeTwoLists::class.java.name){
-            binding.textViewResult.text = MergeTwoLists().run()
-        }
-
-        if(args.problemClass == BestTimeBuyStock::class.java.name){
-            binding.textViewResult.text = BestTimeBuyStock().run()
-        }
-
-        if(args.problemClass == IsPalindrome::class.java.name){
-            binding.textViewResult.text = IsPalindrome().run()
-        }
+        binding.textViewResult.text = args.problem.run()
     }
 
     override fun onDestroyView() {
