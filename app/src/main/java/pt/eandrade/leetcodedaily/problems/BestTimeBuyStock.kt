@@ -22,7 +22,7 @@ class BestTimeBuyStock: IsProblem {
             else -> { intArrayOf(0) }
         }
 
-        var resultStr = "DataSet: ${dataSet.map { it.toString() }.toTypedArray().contentToString()}"
+        var resultStr = "DataSet: ${dataSet.contentToString()}"
         val resultProfit = solve(dataSet)
         resultStr += "\nMax Profit: $resultProfit"
 

@@ -24,12 +24,8 @@ class TwoSum : IsProblem {
             }
         }
 
-        var resultStr = "DataSet: ["
-        for(i in dataSet){
-            resultStr += "${i}, "
-        }
-        resultStr = resultStr.removeSuffix(", ") + "]\n"
-        resultStr += "Target: $target"
+        var resultStr = "DataSet: ${dataSet.contentToString()}"
+        resultStr += "\nTarget: $target"
 
         val resultArray = solve(dataSet, target)
 

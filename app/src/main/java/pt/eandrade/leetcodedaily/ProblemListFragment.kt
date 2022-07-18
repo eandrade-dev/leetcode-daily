@@ -35,7 +35,8 @@ class ProblemListFragment : Fragment() {
             BestTimeBuyStock::class.java,
             IsPalindrome::class.java,
             InvertBinaryTree::class.java,
-            ValidAnagram::class.java
+            ValidAnagram::class.java,
+            BinarySearch::class.java,
         )
 
         for(prob in problems){

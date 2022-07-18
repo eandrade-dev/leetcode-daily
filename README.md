@@ -9,3 +9,4 @@ A self-imposed daily leetcode challenge with Kotlin in the Android platform
 - [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
 - [226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)
 - [242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)
+- [704. Binary Search](https://leetcode.com/problems/binary-search)
