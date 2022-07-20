@@ -7,7 +7,7 @@ class BinarySearch : IsProblem {
         val input: IntArray
         val target: Int
 
-        when((3..3).random()){
+        when((1..3).random()){
             1 -> {
                 input = intArrayOf(-1, 0, 3, 5, 9, 12)
                 target = 9

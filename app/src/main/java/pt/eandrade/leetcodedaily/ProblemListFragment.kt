@@ -37,6 +37,8 @@ class ProblemListFragment : Fragment() {
             InvertBinaryTree::class.java,
             ValidAnagram::class.java,
             BinarySearch::class.java,
+            FloodFill::class.java,
+            MaximumSubarray::class.java,
         )
 
         for(prob in problems){
