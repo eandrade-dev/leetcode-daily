@@ -39,6 +39,8 @@ class ProblemListFragment : Fragment() {
             BinarySearch::class.java,
             FloodFill::class.java,
             MaximumSubarray::class.java,
+            LowestCommonAncestorBinarySearchTree::class.java,
+
         )
 
         for(prob in problems){
