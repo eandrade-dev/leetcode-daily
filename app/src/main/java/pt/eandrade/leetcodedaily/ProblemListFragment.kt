@@ -40,6 +40,7 @@ class ProblemListFragment : Fragment() {
             FloodFill::class.java,
             MaximumSubarray::class.java,
             LowestCommonAncestorBinarySearchTree::class.java,
+            BalancedBinaryTree::class.java,
 
         )
 

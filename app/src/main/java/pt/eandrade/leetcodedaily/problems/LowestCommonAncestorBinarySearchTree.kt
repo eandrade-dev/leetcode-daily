@@ -1,6 +1,8 @@
 package pt.eandrade.leetcodedaily.problems
 
 import pt.eandrade.leetcodedaily.misc.IsProblem
+import pt.eandrade.leetcodedaily.misc.Utils.Companion.TreeNode
+import pt.eandrade.leetcodedaily.misc.Utils.Companion.printTree
 
 class LowestCommonAncestorBinarySearchTree : IsProblem {
     override fun run() : String {
@@ -44,12 +46,12 @@ class LowestCommonAncestorBinarySearchTree : IsProblem {
     }
 
     private fun lowestCommonAncestor(root: TreeNode?, p: TreeNode?, q: TreeNode?): TreeNode? {
-        val pval = p?.`val` ?: Int.MAX_VALUE
-        val qval = q?.`val` ?: Int.MAX_VALUE
-
         if(root == null){
             return null
         }
+
+        val pval = p?.`val` ?: Int.MAX_VALUE
+        val qval = q?.`val` ?: Int.MAX_VALUE
 
         if(pval > qval) {
             return lowestCommonAncestor(root, q, p)
@@ -65,19 +67,4 @@ class LowestCommonAncestorBinarySearchTree : IsProblem {
         }
     }
 
-    private fun printTree(root: TreeNode?) : String {
-        var treeStr = ""
-
-        if(root == null){
-            return treeStr
-        }
-
-        treeStr += "${root.`val`}, "
-        treeStr += printTree(root.left)
-        treeStr += printTree(root.right)
-
-        return treeStr
-    }
-
-    class TreeNode(var `val`: Int = 0, var left: TreeNode? = null, var right: TreeNode? = null)
 }

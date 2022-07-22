@@ -1,6 +1,8 @@
 package pt.eandrade.leetcodedaily.problems
 
 import pt.eandrade.leetcodedaily.misc.IsProblem
+import pt.eandrade.leetcodedaily.misc.Utils.Companion.TreeNode
+import pt.eandrade.leetcodedaily.misc.Utils.Companion.printTree
 
 class InvertBinaryTree : IsProblem {
     override fun run(): String {
@@ -38,20 +40,4 @@ class InvertBinaryTree : IsProblem {
 
         return root
     }
-
-    private fun printTree(root: TreeNode?) : String {
-        var treeStr = ""
-
-        if(root == null){
-            return treeStr
-        }
-
-        treeStr += "${root.`val`}, "
-        treeStr += printTree(root.left)
-        treeStr += printTree(root.right)
-
-        return treeStr
-    }
-
-    class TreeNode(var `val`: Int, var left: TreeNode? = null, var right: TreeNode? = null)
 }

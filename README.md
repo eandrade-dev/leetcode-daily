@@ -13,3 +13,4 @@ A self-imposed daily leetcode challenge with Kotlin in the Android platform
 - [733. Flood Fill](https://leetcode.com/problems/flood-fill/)
 - [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
 - [235. Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
+- [110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)
