@@ -1,6 +1,7 @@
 package pt.eandrade.leetcodedaily.problems
 
 import pt.eandrade.leetcodedaily.misc.IsProblem
+import pt.eandrade.leetcodedaily.misc.Utils.Companion.ListNode
 
 class MergeTwoLists : IsProblem {
 
@@ -72,6 +73,4 @@ class MergeTwoLists : IsProblem {
 
         return head.next
     }
-
-    class ListNode(var `val`: Int = 0, var next: ListNode? = null)
 }

@@ -41,6 +41,7 @@ class ProblemListFragment : Fragment() {
             MaximumSubarray::class.java,
             LowestCommonAncestorBinarySearchTree::class.java,
             BalancedBinaryTree::class.java,
+            LinkedListCycle::class.java,
 
         )
 
